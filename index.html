@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+    <header>
+        <h1>Inteligencia Artificial</h1>
+        <nav>
+            <ul>
+                <li><a href="audio.html" class="btn">Audio IA</a></li>
+                <li><a href="imagen.html" class="btn">Imagen IA</a></li> 
+                <li><a href="Presentaciones.html" class="btn">Presentaciones IA</a></li> 
+                <li><a href="texto.html" class="btn">Texto IA</a></li> 
+                <li><a href="video.html" class="btn">Video IA</a></li>                  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="container">
+                <h2>Bienvenido a la era de la Inteligencia Artificial</h2>
+                <img src="IAwebp.webp" alt="INICIO">
+                <h3>CC BY-NC-ND</h3>                                
+                <p>Descubre cómo la IA está transformando nuestro mundo.</p>                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hugo Fernández Caro</p>
+    </footer>
+    <script>
+        // Función para eliminar la clase active de todos los enlaces del menú
+        function removeActiveClass() {
+            const links = document.querySelectorAll('nav ul li a');
+            links.forEach(link => {
+                link.classList.remove('active');
+            });
+        }
+
+        // Añadir evento de clic a cada enlace del menú para eliminar la clase active de los demás enlaces
+        document.getElementById("que-es-link").addEventListener("click", function() {
+            removeActiveClass();
+        });
+
+        document.getElementById("aplicaciones-link").addEventListener("click", function() {
+            removeActiveClass();
+            document.getElementById("aplicaciones-link").classList.add("active");
+        });
+
+        document.getElementById("tecnologias-link").addEventListener("click", function() {
+            removeActiveClass();
+            document.getElementById("tecnologias-link").classList.add("active");
+        });
+
+        document.getElementById("futuro-link").addEventListener("click", function() {
+            removeActiveClass();
+            document.getElementById("futuro-link").classList.add("active");
+        });
+
+        document.getElementById("recursos-link").addEventListener("click", function() {
+            removeActiveClass();
+            document.getElementById("recursos-link").classList.add("active");
+        });
+
+        document.getElementById("repertorio-link").addEventListener("click", function() {
+            removeActiveClass();
+            document.getElementById("repertorio-link").classList.add("active");
+        });
+    </script>
+</body>
+</html>
